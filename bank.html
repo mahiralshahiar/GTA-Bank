@@ -14,6 +14,18 @@
         <h1 class="text-5xl text-center mt-6">Let's get some <span
                 class="font-semibold text-violet-600">Mooooooooney</span>
         </h1>
+        <div class="grid justify-center mt-5">
+
+            <svg id="theme" viewBox=" 0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="w-10 h-10">
+                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                    class="fill-sky-400/20 stroke-sky-500 hover:stroke-lime-950"></path>
+                <path
+                    d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                    class="stroke-sky-500 hover:stroke-lime-950"></path>
+            </svg>
+        </div>
+
 
     </header>
 
@@ -53,8 +65,9 @@
                 <div class="bg-fuchsia-500 p-8 rounded-xl">
                     <h4 class="text-3xl mb-4">Please Deposit</h4>
 
-                    <input class="w-9/12 block mb-2 px-3 rounded	text-black font-medium" type="number" name=""
-                        id="deposit-field" placeholder="$ Amount you want to deposit">
+                    <input
+                        class="text-fuchsia-500  w-9/12 block mb-2 px-3 py-2 rounded	text-black font-medium focus:outline-none focus:border-gray-100 border-2 border-transparent"
+                        type="number" name="" id="deposit-field" placeholder="$ Amount you want to deposit">
 
 
 
@@ -70,8 +83,9 @@
                 <div class="bg-indigo-500 p-8 rounded-xl">
                     <h4 class="text-3xl mb-4">Please Withdraw</h4>
 
-                    <input class="w-9/12 block mb-2 px-3 rounded text-black font-medium" type="number" name=""
-                        id="withdraw-field" placeholder="$ Amount you want to withdraw">
+                    <input
+                        class="text-indigo-500 w-9/12 block mb-2 px-3 py-2 rounded text-black font-medium focus:outline-none focus:border-gray-100 border-2 border-transparent"
+                        type="number" name="" id="withdraw-field" placeholder="$ Amount you want to withdraw">
 
 
 
@@ -96,6 +110,20 @@
 
     <script src="./js/deposit.js"></script>
     <script src="./js/withdraw.js"></script>
+    <script>document.getElementById('theme').addEventListener('click', function () {
+            const body = document.body;
+            const currentBackgroundColor = body.style.backgroundColor;
+
+            if (currentBackgroundColor === 'black') {
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+            } else {
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+            }
+        });
+
+    </script>
 </body>
 
 </html>
