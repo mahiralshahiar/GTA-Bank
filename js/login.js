@@ -5,13 +5,14 @@ document.getElementById('btn-submit').addEventListener('click', function () {
     // ekhane password paua jabe
     const passwordField = document.getElementById('user-password');
     const password = passwordField.value;
-
+    // user id pass check 
     if (email === 'test@gmail.com' && password === 'test') {
-        console.log('valid user')
+        window.location.href = './bank.html'
     }
     else {
-        console.log('invalid email')
+        alert('FBI: invalid User')
     }
 
 
 })
+
